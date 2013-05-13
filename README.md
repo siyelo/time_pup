@@ -42,8 +42,8 @@ Or install it yourself as:
 **Weekdays**
 
  > friday <br/>
- > monday9a <br/>
- > nexttuesda <br/>
+ > monday9am <br/>
+ > nexttuesday <br/>
  > nextweek <br/>
 
 **Handy**

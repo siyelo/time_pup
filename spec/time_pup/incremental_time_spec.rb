@@ -6,7 +6,7 @@ describe TimePup::IncrementalTime do
   end
 
   it "should detect the minutes" do
-    incremental_time("2minutes").should == 2.minutes.from_now.to_i.to_i
+    incremental_time("2minutes").should == 2.minutes.from_now.to_i
   end
 
   it "should detect the minutes (m) (complex)" do
@@ -75,7 +75,7 @@ describe TimePup::IncrementalTime do
 
     it "should work with a mixture of composite and non times" do
       incremental_time("2years3mo12days23h1min").to_i.
-      should == duration
+        should == duration
     end
   end
 

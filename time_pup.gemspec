@@ -10,7 +10,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["sachin.ranchod@gmail.com"]
   gem.description   = %q{A simple natural language date time parser extracted from hound.cc. Perfect for parsing the local part of an email address}
   gem.summary       = %q{Parses time from now (1day2h), weekdays (mon9am), actual dates (15sep2013), actual time (1030) and more.  See hound.cc/how-to for examples. }
-  gem.homepage      = ""
+  gem.homepage      = "http://www.hound.cc"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
