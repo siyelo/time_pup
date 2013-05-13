@@ -1,5 +1,4 @@
 module TimePup
-
   class DateTimeParser
     MONTHS = /jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec/i
     TIME = /\d{1,4}[a|p]m/i

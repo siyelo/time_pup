@@ -1,12 +1,9 @@
 module TimePup
   class AdverbParser
-    ### Constants
     STARTOFDAY = 8
     ENDOFDAY = 17
-
     DAYSOFWEEK = [:monday, :tuesday, :wednesday,
                   :thursday, :friday, :saturday, :sunday]
-
     MATCHERS = {
       tomorrow: /tomorrow/,
       endofday: /endofday/,
@@ -28,7 +25,6 @@ module TimePup
       nextweek: /nextweek/
     }
 
-    ### Instance Methods
     class << self
       def parse(parsable, zone = 'UTC')
         matches = match_key_words(parsable)
@@ -56,7 +52,9 @@ module TimePup
       end
 
       def match_key_words(time)
-        MATCHERS.keys.inject([]) { |result, m| result << time.scan(MATCHERS[m]) }.flatten
+        MATCHERS.keys.inject([]) do
+          |result, m| result << time.scan(MATCHERS[m])
+        end.flatten
       end
 
       def tomorrow

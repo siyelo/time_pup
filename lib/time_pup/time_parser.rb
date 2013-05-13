@@ -7,7 +7,6 @@ module TimePup
     }
     AM_PM = /[a|p]m/i
 
-    ### Instance Methods
     class << self
       def parse(parsable, zone = 'UTC')
         matches = match_key_words(parsable)
